@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <main className="bg-white px-10">
         <section className="min-h-screen text-gray-800">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-md">Justine Espinosa</h1>
+            <h1 className="text-md  font-burtons ">HOAVETH</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -21,13 +22,50 @@ export default function Home() {
               <li>
                 <a
                   href="#"
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="font-medium bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                 >
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
+
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal 600 font-medium">
+              Justine Espinosa
+            </h2>
+            <h3 className="text-2xl py-2">Full-Stack Web Developer.</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Welcome to my digital portfolio! I am a full-stack web developer
+              with three years of experience. I specialize in building
+              high-quality React applications that provide a seamless user
+              experience. I do content creation on the side as well!
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+            <a
+              className="cursor-pointer"
+              href="https://www.facebook.com/thepodbox"
+              target="_blank"
+            >
+              <AiFillFacebook />
+            </a>
+            <a
+              className="cursor-pointer"
+              href="https://www.linkedin.com/in/justine-espinosa/"
+              target="_blank"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              className="cursor-pointer"
+              href="https://github.com/Hoaveth"
+              target="_blank"
+            >
+              <AiFillGithub />
+            </a>
+          </div>
+          <div className=""></div>
         </section>
       </main>
     </>
